@@ -17,7 +17,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:  #F0E440;">
-        <a class="navbar-brand" href="#">SunsetHills</a>
+        <a class="navbar-brand" href="#">SunsetHillsz</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation"></button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -26,10 +26,10 @@
                     <a class="nav-link" href="index.html">🌒Home </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="solve.html">🌓Solve </a>
+                    <a class="nav-link active" href="solve.html">🌓Solve <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="code.html">☀Code <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="code.html">☀Code</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" target="_blank" href="https://github.com/zhadjah9559/SunsetHills">🌗Github</a>
@@ -41,11 +41,53 @@
         </div>
     </nav>
 
-    <pre>
-        <code>
+    <div class="container pt-5">
 
-        </code>
-    </pre>
+
+        <div class="row">
+            <div class="col-md form-group">
+                <input class="form-control" id="input1" placeholder="Enter Height" type="number"/>
+            </div>
+            <div class="col-md form-group">
+                <input class="form-control" id="input2" placeholder="Enter Height" type="number"/>
+            </div>
+            <div class="col-md form-group">
+                <input class="form-control" id="input3" placeholder="Enter Height" type="number"/>
+            </div>
+            <div class="col-md form-group">
+                <input class="form-control" id="input4" placeholder="Enter Height" type="number"/>
+            </div>
+            <div class="col-md form-group">
+                <input class="form-control" id="input5" placeholder="Enter Height" type="number"/>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <label><span></span><input class="btn btn-primary" type="submit" onclick="BeginFunction()"></label>
+        </div>
+
+        <div class="row">
+            <div class="col-4 offset-6">
+                <p>I will Show Results</p>
+                <hr/>
+                <p id="results"></p>
+            </div>
+        </div>
+
+        
+
+
+    </div>
+
+  
+       
+
+       
+
+
+    
+    </div>    
+        
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
