@@ -79,5 +79,5 @@ function JasonsFunction(){
 }
 
 function clear(){
-    buildings.querySelectorAll("")
+    buildings.
 }

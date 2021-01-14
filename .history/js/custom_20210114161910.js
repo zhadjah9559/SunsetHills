@@ -19,7 +19,7 @@ function BeginFunction(){
     //Create multiple functions for debugging purposes
     //helps keeps track of exactly where problems are 
     //KeepTrackOfTallest();
-   
+    JasonsFunction();
 }
 
 function KeepTrackOfTallest(){
@@ -79,5 +79,5 @@ function JasonsFunction(){
 }
 
 function clear(){
-    buildings.querySelectorAll("")
+    document.getElementById().querySelector("")
 }

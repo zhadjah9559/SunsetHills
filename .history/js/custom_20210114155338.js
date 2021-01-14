@@ -2,24 +2,20 @@ let sunsetOrder = "";
 
 function BeginFunction(){
     //wire up all the data to the building variables
-    let building1 = parseInt( document.getElementById("input1") )
-    let building2 = parseInt( document.getElementById("input2") )
-    let building3 = parseInt( document.getElementById("input3") )
-    let building4 = parseInt( document.getElementById("input4") )
-    let building5 = parseInt( document.getElementById("input5") )
-
-    const buildings = document.querySelectorAll(".form-control").forEach( building =>{
-        JasonsFunction()
-    })
+    let building1 = parseInt( document.getElementById("input1").value )
+    let building2 = parseInt( document.getElementById("input2").value )
+    let building3 = parseInt( document.getElementById("input3").value )
+    let building4 = parseInt( document.getElementById("input4").value )
+    let building5 = parseInt( document.getElementById("input5").value )
 
      //Put all the buildings into an array
-     //let buildingsArray = [building1, building2, building3, building4, building5]
+     let buildingsArray = [building1, building2, building3, building4, building5]
 
 
     //Create multiple functions for debugging purposes
     //helps keeps track of exactly where problems are 
-    //KeepTrackOfTallest();
-   
+    KeepTrackOfTallest();
+    displayResults();
 }
 
 function KeepTrackOfTallest(){
@@ -53,6 +49,7 @@ function KeepTrackOfTallest(){
         }        
     }
     
+    //
     if(tallestBuilding == false)
         sunsetOrder.push("")
     else
@@ -61,6 +58,19 @@ function KeepTrackOfTallest(){
     results = sunsetOrder.join("");
     document.getElementById("results").innerHTML = `${results}`;
 }
+
+
+
+function displayResults(){
+
+    //since the sunset is in the west, no mattter what, the first building (located in the west)
+    //will always see the sunset
+    let results = ["Building 1 will see the sunset"]
+
+
+
+}
+
 
 function JasonsFunction(){
     let maxHeight = buildingsArray[0]
@@ -74,10 +84,9 @@ function JasonsFunction(){
             maxHeight = buildingsArray[i]
             viewOrder.push(maxheight)
         }
-        document.getElementById("results").innerText =  `The ascending array is [ ${ascendingarray.join(",")}]`
-    }
-}
 
-function clear(){
-    buildings.querySelectorAll("")
+
+        document.getElementById(results")
+        
+    }
 }

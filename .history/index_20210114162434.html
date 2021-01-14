@@ -22,11 +22,11 @@
             aria-expanded="false" aria-label="Toggle navigation"></button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="solve.html">Solve </a>
+                    <a class="nav-link active" href="solve.html">Solve <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="code.html">Code</a>
@@ -43,13 +43,36 @@
         </div>
     </nav>
 
-    
+    <div class="container pt-5">
+
+        <div class="row">
+            <div class="col form-group">
+                <input class="form-control" id="input1" placeholder="Enter your Fizz Number:" type="number"/>
+            </div>
+            <div class="col form-group">
+                <input class="form-control" id="input2" placeholder="Enter your Buzz Number:" type="number"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 offset-3 form-group">
+                <button class="btn btn-primary btnWide" id="fizzButton">Click me</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 offset-6">
+                <p>I will Show Results</p>
+                <hr/>
+                <p id="results"></p>
+            </div>
+        </div>
+    </div>
 
     <!--My attempt at the FizzBuzz Meta-->
     <div class="container">
 
         <div class="row justify-content-center">
-            <img src="img/SunsetHills.png" alt="Sunset Hills logo" id="Logo" class="responsive" >
+            <img src="img/FizzBuzz.png" alt="Sunset Hills logo" id="Logo" class="responsive" >
         </div>
 
 

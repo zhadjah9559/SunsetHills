@@ -9,7 +9,7 @@ function BeginFunction(){
     let building5 = parseInt( document.getElementById("input5") )
 
     const buildings = document.querySelectorAll(".form-control").forEach( building =>{
-        JasonsFunction()
+
     })
 
      //Put all the buildings into an array
@@ -19,7 +19,7 @@ function BeginFunction(){
     //Create multiple functions for debugging purposes
     //helps keeps track of exactly where problems are 
     //KeepTrackOfTallest();
-   
+    JasonsFunction();
 }
 
 function KeepTrackOfTallest(){
@@ -79,5 +79,5 @@ function JasonsFunction(){
 }
 
 function clear(){
-    buildings.querySelectorAll("")
+    document.getElementById().querySelector("")
 }

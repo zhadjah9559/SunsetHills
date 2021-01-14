@@ -8,9 +8,7 @@ function BeginFunction(){
     let building4 = parseInt( document.getElementById("input4") )
     let building5 = parseInt( document.getElementById("input5") )
 
-    const buildings = document.querySelectorAll(".form-control").forEach( building =>{
-        JasonsFunction()
-    })
+    const buildings = document.querySelectorAll(".form-control").forEach()
 
      //Put all the buildings into an array
      //let buildingsArray = [building1, building2, building3, building4, building5]
@@ -19,7 +17,7 @@ function BeginFunction(){
     //Create multiple functions for debugging purposes
     //helps keeps track of exactly where problems are 
     //KeepTrackOfTallest();
-   
+    JasonsFunction();
 }
 
 function KeepTrackOfTallest(){
@@ -74,10 +72,12 @@ function JasonsFunction(){
             maxHeight = buildingsArray[i]
             viewOrder.push(maxheight)
         }
+
         document.getElementById("results").innerText =  `The ascending array is [ ${ascendingarray.join(",")}]`
+        
     }
 }
 
 function clear(){
-    buildings.querySelectorAll("")
+    document.getElementById().querySelector("")
 }
