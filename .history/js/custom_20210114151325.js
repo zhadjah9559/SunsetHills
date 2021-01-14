@@ -30,10 +30,10 @@ function KeepTrackOfTallest(){
         //this loop starts at one because it will need to stay before the position of the 
         //current building. It needs to stay before current building to properly compare
         //which building is taller. That is why the middle condition is 
-        // previousBuilding < currentBuilding
+        //  previousBuilding < currentBuilding
         for (let previousBuilding = 0; previousBuilding < currentBuilding; previousBuilding++) {
             
-            //if any of the previous building are taller than the building the very first loop 
+            //if any of the previous building are taller than the building 
             if(buildingsArray[previousBuilding] >= buildingsArray[currentBuilding]){
 
 

@@ -17,7 +17,7 @@ function KeepTrackOfTallest(){
     let buildingsArray = [building1, building2, building3, building4, building5]
 
     //You will need to use a nested for loops. Nested for loops are how you can properly
-    //compare elements inside of an array with eachother.
+    //compare elements inside of an array i
 
     //Loop starts at one because it will be the loop that is compared to all the 
     //previous buildings that are infront of it  
@@ -30,15 +30,10 @@ function KeepTrackOfTallest(){
         //this loop starts at one because it will need to stay before the position of the 
         //current building. It needs to stay before current building to properly compare
         //which building is taller. That is why the middle condition is 
-        // previousBuilding < currentBuilding
-        for (let previousBuilding = 0; previousBuilding < currentBuilding; previousBuilding++) {
+        //  previousBuilding < currentBuilding
+        for (let previousBuilding = 0; previousBuilding < array.length; previousBuilding++) {
+            const element = array[previousBuilding];
             
-            //if any of the previous building are taller than the building the very first loop 
-            if(buildingsArray[previousBuilding] >= buildingsArray[currentBuilding]){
-
-
-
-            }            
         }
 
 
