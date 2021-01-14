@@ -6,8 +6,7 @@ function KeepTrackofTallest(){
     let building4 = parseInt( document.getElementById("input4").value )
     let building5 = parseInt( document.getElementById("input5").value )
 
+
     
-
-
 
 }
