@@ -8,18 +8,15 @@ function BeginFunction(){
     let building4 = parseInt( document.getElementById("input4").value )
     let building5 = parseInt( document.getElementById("input5").value )
 
-     //Put all the buildings into an array
-     let buildingsArray = [building1, building2, building3, building4, building5]
-
-
-    //Create multiple functions for debugging purposes
-    //helps keeps track of exactly where problems are 
     KeepTrackOfTallest();
+
+
     displayResults();
 }
 
 function KeepTrackOfTallest(){
-   
+    //Put all the buildings into an array
+    let buildingsArray = [building1, building2, building3, building4, building5]
 
     //You will need to use  nested for loops. Nested for loops are how you can properly
     //compare elements inside of an array with eachother.
@@ -55,8 +52,9 @@ function KeepTrackOfTallest(){
     else
         sunsetOrder.push("")
     
-    results = sunsetOrder.join("");
-    document.getElementById("results").innerHTML = `${results}`;
+    
+
+
 }
 
 
@@ -69,24 +67,4 @@ function displayResults(){
 
 
 
-}
-
-
-function JasonsFunction(){
-    let maxHeight = buildingsArray[0]
-    let viewOrder = new Array()
-    viewOrder.push(building1)
-
-    //if the current building is larger than the largest previous building, then add it to array
-    //Determine maximum number algorithm
-    for (let i = 1; i < array.length; i++) {
-        if(buildingsArray[i] > maxheight){
-            maxHeight = buildingsArray[i]
-            viewOrder.push(maxheight)
-        }
-
-
-        //maxHeight = buildingsArray[i];
-        
-    }
 }

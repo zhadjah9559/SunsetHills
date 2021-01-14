@@ -73,20 +73,11 @@ function displayResults(){
 
 
 function JasonsFunction(){
-    let maxHeight = buildingsArray[0]
-    let viewOrder = new Array()
-    viewOrder.push(building1)
+    let maxHeight = buildingsArray[0];
+    let viewers = buildin
 
-    //if the current building is larger than the largest previous building, then add it to array
-    //Determine maximum number algorithm
-    for (let i = 1; i < array.length; i++) {
-        if(buildingsArray[i] > maxheight){
-            maxHeight = buildingsArray[i]
-            viewOrder.push(maxheight)
-        }
-
-
-        //maxHeight = buildingsArray[i];
+    for (let loop = 0; loop < array.length; loop++) {
+        maxHeight = buildingArray[loop];
         
     }
 }
