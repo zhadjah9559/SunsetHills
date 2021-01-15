@@ -110,13 +110,13 @@
         let viewOrder = new Array()
         viewOrder.push(building1)
 
-        //if the current building is larger than the largest previous building, then add it to array
-        //Determine maximum number algorithm
-        for (let i = 1; i < array.length; i++) {
-        if(buildingsArray[i] > maxheight){
-        maxHeight = buildingsArray[i]
-        viewOrder.push(maxheight)
-        }
+    //if the current building is larger than the largest previous building, then add it to array
+    //Determine maximum number algorithm
+    for (let i = 1; i < array.length; i++) {
+    if(buildingsArray[i] > maxheight){
+    maxHeight = buildingsArray[i]
+    viewOrder.push(maxheight)
+    }
     document.getElementById("results").innerText =  `The ascending array is [ ${ascendingarray.join(",")}]`
     }
     }

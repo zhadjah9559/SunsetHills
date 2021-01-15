@@ -96,34 +96,34 @@
         }        
 }
 
-    if(tallestBuilding == false)
-    sunsetOrder.push("")
-    else
-    sunsetOrder.push("")
+if(tallestBuilding == false)
+sunsetOrder.push("")
+else
+sunsetOrder.push("")
 
-    results = sunsetOrder.join("");
-    document.getElementById("results").innerHTML = `${results}`;
-    }
+results = sunsetOrder.join("");
+document.getElementById("results").innerHTML = `${results}`;
+}
 
     function JasonsFunction(){
         let maxHeight = buildingsArray[0]
         let viewOrder = new Array()
         viewOrder.push(building1)
 
-        //if the current building is larger than the largest previous building, then add it to array
-        //Determine maximum number algorithm
-        for (let i = 1; i < array.length; i++) {
-        if(buildingsArray[i] > maxheight){
-        maxHeight = buildingsArray[i]
-        viewOrder.push(maxheight)
-        }
-    document.getElementById("results").innerText =  `The ascending array is [ ${ascendingarray.join(",")}]`
+    //if the current building is larger than the largest previous building, then add it to array
+    //Determine maximum number algorithm
+    for (let i = 1; i < array.length; i++) {
+    if(buildingsArray[i] > maxheight){
+    maxHeight = buildingsArray[i]
+    viewOrder.push(maxheight)
     }
-    }
+document.getElementById("results").innerText =  `The ascending array is [ ${ascendingarray.join(",")}]`
+}
+}
 
-    function clear(){
-    buildings.querySelectorAll("")
-    }
+function clear(){
+buildings.querySelectorAll("")
+}
         </code>
     </pre>
 
