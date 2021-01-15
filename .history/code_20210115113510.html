@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fizz Buzz Coding Challenge (Implementing the Meta Strat</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/prism.css">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:  #F0E440;">
+        <a class="navbar-brand" href="#">SunsetHills</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">🌒Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="solve.html">🌓Solve </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="code.html">☀Code <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://github.com/zhadjah9559/SunsetHills">🌗Github</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://www.zacharyhadjah.netlify.app">🌘Portfolio</a>
+                </li>                
+            </ul>
+        </div>
+    </nav>
+
+    <pre class="language-javascript"><code class="line-numbers">
+            let sunsetOrder = "";
+
+    function BeginFunction(){
+        //wire up all the data to the building variables
+        let building1 = parseInt( document.getElementById("input1") )
+        let building2 = parseInt( document.getElementById("input2") )
+        let building3 = parseInt( document.getElementById("input3") )
+        let building4 = parseInt( document.getElementById("input4") )
+        let building5 = parseInt( document.getElementById("input5") )
+
+        const buildings = document.querySelectorAll(".form-control").forEach( building =>{
+        JasonsFunction()
+    })
+
+    //Put all the buildings into an array
+    //let buildingsArray = [building1, building2, building3, building4, building5]
+
+
+    //Create multiple functions for debugging purposes
+    //helps keeps track of exactly where problems are 
+    //KeepTrackOfTallest();
+
+    }
+
+    function KeepTrackOfTallest(){
+
+        //You will need to use  nested for loops. Nested for loops are how you can properly
+        //compare elements inside of an array with eachother.
+
+        //Loop starts at one because it will be the loop that is compared to all the 
+        //previous buildings that are infront of it  
+        for (let currentBuilding = 1; currentBuilding < buildingsArray.length; currentBuilding++) {
+
+        //will be kept false UNTIL you find the tallest building
+        //once tallest building is found, it will be switched to true
+        let tallestBuilding = false
+
+        //this loop starts at one because it will need to stay before the position of the 
+        //current building. It needs to stay before current building to properly compare
+        //which building is taller. That is why the middle condition is 
+        // previousBuilding < currentBuilding
+        for (let previousBuilding = 0; previousBuilding < currentBuilding; previousBuilding++) {
+
+        //if any of the previous building are taller than the building that is currently being compared with,
+        //then change the bool to true  
+            if(buildingsArray[previousBuilding] >= buildingsArray[currentBuilding]){
+                tallest = true;
+                break;
+            }else
+                continue;
+        }        
+}
+
+    if(tallestBuilding == false)
+    sunsetOrder.push("")
+    else
+    sunsetOrder.push("")
+
+    results = sunsetOrder.join("");
+    document.getElementById("results").innerHTML = `${results}`;
+    }
+
+    function JasonsFunction(){
+        let maxHeight = buildingsArray[0]
+        let viewOrder = new Array()
+        viewOrder.push(building1)
+
+        //if the current building is larger than the largest previous building, then add it to array
+        //Determine maximum number algorithm
+        for (let i = 1; i < array.length; i++) {
+        if(buildingsArray[i] > maxheight){
+        maxHeight = buildingsArray[i]
+        viewOrder.push(maxheight)
+        }
+    document.getElementById("results").innerText =  `The ascending array is [ ${ascendingarray.join(",")}]`
+    }
+    }
+
+    function clear(){
+    buildings.querySelectorAll("")
+    }
+        </code>
+    </pre>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/prism.js"></script>
+
+  </body>
+</html>
