@@ -18,8 +18,8 @@
     margin-left:-480px;
 }
 
-body{
-    background-image: url("img/SunsetHillsBackground.png");
+.container{
+    background-image: url('img/SunsetHillsBackground.png");
 
   /* Full height */
   height: 100%;

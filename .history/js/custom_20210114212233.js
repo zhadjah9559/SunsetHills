@@ -27,6 +27,7 @@ function BeginFunction(){
 
 function KeepTrackOfTallest(){
    
+
     //You will need to use  nested for loops. Nested for loops are how you can properly
     //compare elements inside of an array with eachother.
 
@@ -60,7 +61,7 @@ function KeepTrackOfTallest(){
     else
         sunsetOrder.push("Building " +(currentBuilding + 1)+ "can't view the sunset")
     
-    let results = sunsetOrder.join("<br>")
+    results = sunsetOrder.join("<br>")
     document.getElementById("results").innerHTML = `${results}`
 }
 

@@ -27,6 +27,7 @@ function BeginFunction(){
 
 function KeepTrackOfTallest(){
    
+
     //You will need to use  nested for loops. Nested for loops are how you can properly
     //compare elements inside of an array with eachother.
 
