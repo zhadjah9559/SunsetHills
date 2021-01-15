@@ -22,7 +22,7 @@ function BeginFunction(){
     if(building1 == null || building2 == null || building3 == null || building4 == null || 
        building5 == null){
         document.getElementById("results").innerHTML = `You must input numbers for all buildings`
-        //clear data
+        
         document.getElementById("results").innerHTML = ``
     }else{
 
