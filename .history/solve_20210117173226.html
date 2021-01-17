@@ -13,60 +13,81 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/prism.css">
+
   </head>
   <body>
-      
     <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:  #F0E440;">
-        <a class="navbar-brand linkText" href="index.html">Sunset Hills</a>
+        <a class="navbar-brand" href="index.html">SunsetHills</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation"></button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link linkText" href="index.html">🌒Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">🌒Home </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link linkText" href="solve.html">🌓Solve </a>
+                    <a class="nav-link active" href="solve.html">🌓Solve <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link linkText" href="code.html">☀Code</a>
+                    <a class="nav-link" href="code.html">☀Code</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link linkText" target="_blank" href="https://github.com/zhadjah9559/SunsetHills">🌗Github</a>
-                </li>
+                    <a class="nav-link" target="_blank" href="https://zacharyhadjah.netlify.app/">🌘Portfolio</a>
+                </li>      
                 <li class="nav-item">
-                    <a class="nav-link linkText" target="_blank" href="https://www.zacharyhadjah.netlify.app">🌘Portfolio</a>
+                    <a class="nav-link" target="_blank" href="https://github.com/zhadjah9559/SunsetHills">🌗Github</a>
                 </li>
+                         
             </ul>
         </div>
     </nav>
-    
-    <div class="container align-items-center indexContainer">
+
+    <div class="container pt-5 align-items-center">       
+
         <div class="row justify-content-center">
-            <img src="img/SunsetHills.png" alt="SunsetHillslogo" id="Logo" class="responsive" >
+            <img src="img/SunsetHills.png" alt="Sunset Hills logo" id="Logo" class="responsive" >
         </div>
-        <hr>
-        <div class="row text-center justify-content-center">
+        <hr/>
 
-            <div class="col-6 form">
-                <h6>Traversing Arrays & Comparing Values</h6>
-                <p>The heights of each building from West (left) to East (right) is given in an integer array.
-                    You have to tell which buildings will be able to see the sunset.
-                    Write a program that prints how many buildings and which buildings will be able to see the sunset, given the array.
-                   
-                </p>
-            </div>       
-        </div>
-        
-        
-            <a class="btn btn-primary offset-4 col-4" href="solve.html" >Check it Out</a>
-            <hr>
-
-            <div class="row justify-content-center">
-                <img id="badges" src="img/badges.png" alt="">
+        <div class="row">
+            <div class="col-md form-group">
+                <input class="form-control" id="input1" placeholder="Enter Height" type="number"/>
             </div>
+            <div class="col-md form-group">
+                <input class="form-control" id="input2" placeholder="Enter Height" type="number"/>
+            </div>
+            <div class="col-md form-group">
+                <input class="form-control" id="input3" placeholder="Enter Height" type="number"/>
+            </div>
+            <div class="col-md form-group">
+                <input class="form-control" id="input4" placeholder="Enter Height" type="number"/>
+            </div>
+            <div class="col-md form-group">
+                <input class="form-control" id="input5" placeholder="Enter Height" type="number"/>
+            </div>
+        </div>
 
-    </div>   
+        <div class="row justify-content-center">
+            <label><span></span><input class="btn btn-primary" type="submit" onclick="BeginFunction()"></label>
+        </div>
+
+        <div class="row">
+            <div class="col-4 offset-6">
+                <p>I will Show Results</p>
+                <hr/>
+                <p id="results"></p>
+            </div>
+        </div>
+    </div>
+
+  
+       
+
+       
+
+
+    
+    </div>    
         
 
     <!-- Optional JavaScript -->
