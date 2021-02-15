@@ -17,12 +17,11 @@ function BeginFunction(){
          document.getElementById("results").innerHTML = ``
     
 
-     
+     //Put all the buildings into an array
+     let buildingsArray = [building1, building2, building3, building4, building5]
 
     
     }else{
-        //Put all the buildings into an array
-        let buildingsArray = [building1, building2, building3, building4, building5]
 
         //You will need to use  nested for loops. Nested for loops are how you can properly
         //compare elements inside of an array with eachother.
@@ -52,10 +51,10 @@ function BeginFunction(){
             }        
 
             if(tallest == false){
-                sunsetOrder.push("Building " +(currentBuilding + 1)+ " can view the sunset")
+                sunsetOrder.push("Building " +(currentBuilding + 1)+ "can view the sunset")
             }
             else{
-                sunsetOrder.push("Building " +(currentBuilding + 1)+ " can't view the sunset")
+                sunsetOrder.push("Building " +(currentBuilding + 1)+ "can't view the sunset")
             }
 
             let results = sunsetOrder.join("<br>")
@@ -65,21 +64,21 @@ function BeginFunction(){
 }
 
 
-// function JasonsFunction(){
-//     let maxHeight = buildingsArray[0]
-//     let viewOrder = new Array()
-//     viewOrder.push(building1)
+function JasonsFunction(){
+    let maxHeight = buildingsArray[0]
+    let viewOrder = new Array()
+    viewOrder.push(building1)
 
-//     //if the current building is larger than the largest previous building, then add it to array
-//     //Determine maximum number algorithm
-//     for (let i = 1; i < array.length; i++) {
-//         if(buildingsArray[i] > maxheight){
-//             maxHeight = buildingsArray[i]
-//             viewOrder.push(maxheight)
-//         }
-//         document.getElementById("results").innerText =  `The ascending array is [ ${ascendingarray.join(",")}]`
-//     }
-// }
+    //if the current building is larger than the largest previous building, then add it to array
+    //Determine maximum number algorithm
+    for (let i = 1; i < array.length; i++) {
+        if(buildingsArray[i] > maxheight){
+            maxHeight = buildingsArray[i]
+            viewOrder.push(maxheight)
+        }
+        document.getElementById("results").innerText =  `The ascending array is [ ${ascendingarray.join(",")}]`
+    }
+}
 
 function clear(){
     buildings.querySelectorAll("")

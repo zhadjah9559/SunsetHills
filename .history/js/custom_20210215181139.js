@@ -21,9 +21,8 @@ function BeginFunction(){
 
     
     }else{
-        //Put all the buildings into an array
-        let buildingsArray = [building1, building2, building3, building4, building5]
 
+        
         //You will need to use  nested for loops. Nested for loops are how you can properly
         //compare elements inside of an array with eachother.
 
@@ -52,10 +51,10 @@ function BeginFunction(){
             }        
 
             if(tallest == false){
-                sunsetOrder.push("Building " +(currentBuilding + 1)+ " can view the sunset")
+                sunsetOrder.push("Building " +(currentBuilding + 1)+ "can view the sunset")
             }
             else{
-                sunsetOrder.push("Building " +(currentBuilding + 1)+ " can't view the sunset")
+                sunsetOrder.push("Building " +(currentBuilding + 1)+ "can't view the sunset")
             }
 
             let results = sunsetOrder.join("<br>")

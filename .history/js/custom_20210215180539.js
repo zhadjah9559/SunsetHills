@@ -8,21 +8,20 @@ function BeginFunction(){
     let building4 = parseInt( document.getElementById("input4").value )
     let building5 = parseInt( document.getElementById("input5").value )
 
+    //will be kept false UNTIL you find the tallest building
+    //once tallest building is found, it will be switched to true
+    let tallest = false;
+    
+     //Put all the buildings into an array
+     let buildingsArray = [building1, building2, building3, building4, building5]
 
     //User Input validation
     if(building1 == null || building2 == null || building3 == null || building4 == null || 
-        building5 == null){
-         document.getElementById("results").innerHTML = `You must input numbers for all buildings`
-         //clear data
-         document.getElementById("results").innerHTML = ``
-    
-
-     
-
-    
+       building5 == null){
+        document.getElementById("results").innerHTML = `You must input numbers for all buildings`
+        //clear data
+        document.getElementById("results").innerHTML = ``
     }else{
-        //Put all the buildings into an array
-        let buildingsArray = [building1, building2, building3, building4, building5]
 
         //You will need to use  nested for loops. Nested for loops are how you can properly
         //compare elements inside of an array with eachother.
@@ -31,10 +30,6 @@ function BeginFunction(){
         //previous buildings that are infront of it  
         for (let currentBuilding = 1; currentBuilding < buildingsArray.length; currentBuilding++) {
 
-            //will be kept false UNTIL you find the tallest building
-            //once tallest building is found, it will be switched to true
-            let tallest = false;
-    
             //this loop starts at one because it will need to stay before the position of the 
             //current building. It needs to stay before current building to properly compare
             //which building is taller. That is why the middle condition is 
@@ -46,18 +41,17 @@ function BeginFunction(){
                 if(buildingsArray[previousBuilding] >= buildingsArray[currentBuilding]){
                     tallest = true;
                     break;
-                }else{
+                }else
                     continue;
-                }
+                
             }        
 
             if(tallest == false){
-                sunsetOrder.push("Building " +(currentBuilding + 1)+ " can view the sunset")
+                sunsetOrder.push("Building " +(currentBuilding + 1)+ "can view the sunset")
             }
             else{
-                sunsetOrder.push("Building " +(currentBuilding + 1)+ " can't view the sunset")
-            }
-
+                sunsetOrder.push("Building " +(currentBuilding + 1)+ "can't view the sunset")
+        }
             let results = sunsetOrder.join("<br>")
             document.getElementById("results").innerHTML = `${results}`
         }
@@ -65,21 +59,21 @@ function BeginFunction(){
 }
 
 
-// function JasonsFunction(){
-//     let maxHeight = buildingsArray[0]
-//     let viewOrder = new Array()
-//     viewOrder.push(building1)
+function JasonsFunction(){
+    let maxHeight = buildingsArray[0]
+    let viewOrder = new Array()
+    viewOrder.push(building1)
 
-//     //if the current building is larger than the largest previous building, then add it to array
-//     //Determine maximum number algorithm
-//     for (let i = 1; i < array.length; i++) {
-//         if(buildingsArray[i] > maxheight){
-//             maxHeight = buildingsArray[i]
-//             viewOrder.push(maxheight)
-//         }
-//         document.getElementById("results").innerText =  `The ascending array is [ ${ascendingarray.join(",")}]`
-//     }
-// }
+    //if the current building is larger than the largest previous building, then add it to array
+    //Determine maximum number algorithm
+    for (let i = 1; i < array.length; i++) {
+        if(buildingsArray[i] > maxheight){
+            maxHeight = buildingsArray[i]
+            viewOrder.push(maxheight)
+        }
+        document.getElementById("results").innerText =  `The ascending array is [ ${ascendingarray.join(",")}]`
+    }
+}
 
 function clear(){
     buildings.querySelectorAll("")
