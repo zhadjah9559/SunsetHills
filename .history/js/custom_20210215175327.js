@@ -55,7 +55,10 @@ function BeginFunction(){
             let results = sunsetOrder.join("<br>")
             document.getElementById("results").innerHTML = `${results}`
         }
-    }
+
+
+
+    } 
        
 
 

@@ -8,6 +8,7 @@ function BeginFunction(){
     let building4 = parseInt( document.getElementById("input4").value )
     let building5 = parseInt( document.getElementById("input5").value )
     let tallest = false;
+
     
      //Put all the buildings into an array
      let buildingsArray = [building1, building2, building3, building4, building5]
@@ -48,14 +49,17 @@ function BeginFunction(){
             }        
 
             if(tallest == false)
-                sunsetOrder.push("Building " +(currentBuilding + 1)+ "can view the sunset")
+            sunsetOrder.push("Building " +(currentBuilding + 1)+ "can view the sunset")
             else
                 sunsetOrder.push("Building " +(currentBuilding + 1)+ "can't view the sunset")
             
             let results = sunsetOrder.join("<br>")
             document.getElementById("results").innerHTML = `${results}`
         }
-    }
+
+
+
+    } 
        
 
 
