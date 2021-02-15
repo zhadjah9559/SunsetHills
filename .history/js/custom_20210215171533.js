@@ -7,7 +7,6 @@ function BeginFunction(){
     let building3 = parseInt( document.getElementById("input3").value )
     let building4 = parseInt( document.getElementById("input4").value )
     let building5 = parseInt( document.getElementById("input5").value )
-    let tallest = false;
 
     //const buildings = document.querySelectorAll(".form-control").forEach( building =>{
       //  return [ .form-control].map()
