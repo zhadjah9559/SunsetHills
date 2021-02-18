@@ -52,10 +52,10 @@ function BeginFunction(){
             }        
 
             if(tallest == false){
-                sunsetOrder.push("Building #" +(currentBuilding + 1)+ " can view the sunset")
+                sunsetOrder.push("Building " +(currentBuilding + 1)+ " can view the sunset")
             }
             else{
-                sunsetOrder.push("Building #" +(currentBuilding + 1)+ " can't view the sunset")
+                sunsetOrder.push("Building " +(currentBuilding + 1)+ " can't view the sunset")
             }
 
             let results = sunsetOrder.join("<br>")
