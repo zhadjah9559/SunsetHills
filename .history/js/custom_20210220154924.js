@@ -1,3 +1,5 @@
+
+
 function BeginFunction(){
     let sunsetOrder = ["Building 1 will always view the sunset!"];
 
@@ -7,6 +9,7 @@ function BeginFunction(){
     let building3 = parseInt( document.getElementById("input3").value )
     let building4 = parseInt( document.getElementById("input4").value )
     let building5 = parseInt( document.getElementById("input5").value )
+
 
     //User Input validation
     if(building1 == null || building2 == null || building3 == null || building4 == null || 
@@ -58,7 +61,10 @@ function BeginFunction(){
     }
 }
 
+
 function clearContents(){
     document.getElementById("results").innerHTML =""
-    sunsetOrder = []    
+    sunsetOrder = []
+
+    
 }

@@ -1,3 +1,5 @@
+
+
 function BeginFunction(){
     let sunsetOrder = ["Building 1 will always view the sunset!"];
 

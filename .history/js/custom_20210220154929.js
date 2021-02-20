@@ -1,3 +1,5 @@
+
+
 function BeginFunction(){
     let sunsetOrder = ["Building 1 will always view the sunset!"];
 
@@ -58,7 +60,10 @@ function BeginFunction(){
     }
 }
 
+
 function clearContents(){
     document.getElementById("results").innerHTML =""
-    sunsetOrder = []    
+    sunsetOrder = []
+
+    
 }
