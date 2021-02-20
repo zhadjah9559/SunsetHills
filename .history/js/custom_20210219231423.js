@@ -60,6 +60,6 @@ function BeginFunction(){
 }
 
 
-function clearContents(){
-    document.getElementById("results").innerHTML ="";
+function clear(){
+    document.getElementById("results").innerHTML = ` `
 }

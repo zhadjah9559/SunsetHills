@@ -61,5 +61,5 @@ function BeginFunction(){
 
 
 function clearContents(){
-    document.getElementById("results").innerHTML ="";
+    document.getElementById("results").innerHTML = ` `
 }

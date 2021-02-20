@@ -1,4 +1,4 @@
-let sunsetOrder = ["Building 1 will always view the sunset!"];
+let sunsetOrder;// = ["Building 1 will always view the sunset!"];
 
 function BeginFunction(){
     //wire up all the data to the building variables
@@ -61,5 +61,5 @@ function BeginFunction(){
 
 
 function clearContents(){
-    document.getElementById("results").innerHTML ="";
+    document.getElementById("results").innerHTML = ` `
 }

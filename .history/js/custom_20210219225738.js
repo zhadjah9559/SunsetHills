@@ -15,6 +15,11 @@ function BeginFunction(){
          document.getElementById("results").innerHTML = `You must input numbers for all buildings`
          //clear data
          document.getElementById("results").innerHTML = ``
+    
+
+     
+
+    
     }else{
         //Put all the buildings into an array
         let buildingsArray = [building1, building2, building3, building4, building5]
@@ -60,6 +65,6 @@ function BeginFunction(){
 }
 
 
-function clearContents(){
-    document.getElementById("results").innerHTML ="";
+function clear(){
+    buildings.querySelectorAll("")
 }

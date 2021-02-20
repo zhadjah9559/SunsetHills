@@ -32,11 +32,12 @@
                     <a class="nav-link" href="code.html">☀Code</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="https://zacharyhadjah.netlify.app/">🌗Portfolio</a>
+                    <a class="nav-link" target="_blank" href="https://zacharyhadjah.netlify.app/">🌘Portfolio</a>
                 </li>      
                 <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="https://github.com/zhadjah9559/SunsetHills">🌘Github</a>
-                </li>      
+                    <a class="nav-link" target="_blank" href="https://github.com/zhadjah9559/SunsetHills">🌗Github</a>
+                </li>
+                         
             </ul>
         </div>
     </nav>
@@ -67,15 +68,17 @@
         </div>
 
         <div class="row justify-content-center pt-2">
-            <label>
-                <button class="btn btn-primary" type="submit" onclick="BeginFunction()"
-                          data-toggle="modal" data-target="#ResultsModal">
-                          Submit
-                </button>
-            </label>
+            <label><input class="btn btn-primary" type="submit" onclick="BeginFunction()"
+                          data-toggle="modal" data-target="#ResultsModal"></label>
         </div>
 
-        
+        <div class="row">
+            <div class="col-4 offset-6">
+                <p>I will Show Results</p>
+                <hr/>
+                <p id="results"></p>
+            </div>
+        </div>
     </div>
 
   
@@ -91,22 +94,29 @@
               <div class="modal-body" id="ResultsBody">
                 <div id="small-dialog2" class="white-popup zoom-anim-dialog text-center">
                   
-                      <div id=results></div>
+                      <p id=results></p>
                       
                 </div>
               </div>
 
               <div class="modal-footer justify-content-center" id="ResultsFooter">
-                
-                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="clearContents()">Close</button>  
-                
+                <a href="https://zacharyhadjahmortgagemanager.netlify.app" target="_blank">
+                  btn <btn-primary></btn-primary>   
+                </a>            
+                <!-- <button type="button" class="btn btn-primary modalSelector">Close</button> -->
               </div>
           </div>
 
         </div>
       </div>
       <!--Results Modal-->
+
+       
+
+
+    
     </div>    
+        
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

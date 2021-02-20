@@ -35,13 +35,9 @@ body{
 }
 
 #ResultsHeader{
-    background-color: #F0E440;
+    background-color: rgb(243, 235, 123);
 }
 
-#ResultsFooter{
+ResultsFooter{
     background-color: #F0E440;
-}
-
-#ResultsBody{
-    background-color:#f3eb7b
 }

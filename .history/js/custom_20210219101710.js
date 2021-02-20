@@ -15,6 +15,11 @@ function BeginFunction(){
          document.getElementById("results").innerHTML = `You must input numbers for all buildings`
          //clear data
          document.getElementById("results").innerHTML = ``
+    
+
+     
+
+    
     }else{
         //Put all the buildings into an array
         let buildingsArray = [building1, building2, building3, building4, building5]
@@ -60,6 +65,22 @@ function BeginFunction(){
 }
 
 
-function clearContents(){
-    document.getElementById("results").innerHTML ="";
+// function JasonsFunction(){
+//     let maxHeight = buildingsArray[0]
+//     let viewOrder = new Array()
+//     viewOrder.push(building1)
+
+//     //if the current building is larger than the largest previous building, then add it to array
+//     //Determine maximum number algorithm
+//     for (let i = 1; i < array.length; i++) {
+//         if(buildingsArray[i] > maxheight){
+//             maxHeight = buildingsArray[i]
+//             viewOrder.push(maxheight)
+//         }
+//         document.getElementById("results").innerText =  `The ascending array is [ ${ascendingarray.join(",")}]`
+//     }
+// }
+
+function clear(){
+    buildings.querySelectorAll("")
 }
